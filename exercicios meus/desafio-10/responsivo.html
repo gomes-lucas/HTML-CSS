@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /*largura minima, menos que 800px, terá visualização adaptavel a tela*/
+            max-width: 800px;  /* largura máxima, a partir de 800px, terá visualização completa */
+            margin: auto;   /* vai deixar o main no centro automaticamente */
+        }
+
+        img {
+            width: 100%; /* para ter 100% da largura da imagem*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eaque. Incidunt minima, atque nihil, quas, exercitationem amet quod ad beatae ea quis modi illo quisquam harum esse iste dolorum. Dolorum repellendus ratione iusto consectetur maxime consequuntur quaerat aut esse sequi non et distinctio repudiandae totam magni recusandae deleniti, vel, placeat repellat, eos aliquam blanditiis. Iusto quae tempore, architecto repellat mollitia, sunt officiis eveniet iure nobis libero non quidem reiciendis, vel deleniti repellendus nam! Vel placeat, nobis doloremque deleniti, quasi perspiciatis minima fugit autem laboriosam dolorum ipsa expedita eos explicabo non! Optio ab accusantium sunt, magni voluptate commodi ut aliquid maiores assumenda maxime possimus cupiditate blanditiis quo quam. Odio cum fugit facilis blanditiis adipisci cumque ex perferendis facere. Necessitatibus, facilis unde dolores iusto quaerat rem soluta repellendus fuga nobis voluptates vitae adipisci accusantium placeat officiis hic recusandae vero maxime sit, culpa ullam? Aliquid, necessitatibus tenetur ipsa suscipit repellat aperiam porro doloribus!</p>
+        <picture> <!-- deixando a imagem responsiva -->
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg"> <!--menos de 600px, vai carregar a imagem secundaria, deixando responsivo.-->
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eaque. Incidunt minima, atque nihil, quas, exercitationem amet quod ad beatae ea quis modi illo quisquam harum esse iste dolorum. Dolorum repellendus ratione iusto consectetur maxime consequuntur quaerat aut esse sequi non et distinctio repudiandae totam magni recusandae deleniti, vel, placeat repellat, eos aliquam blanditiis. Iusto quae tempore, architecto repellat mollitia, sunt officiis eveniet iure nobis libero non quidem reiciendis, vel deleniti repellendus nam! Vel placeat, nobis doloremque deleniti, quasi perspiciatis minima fugit autem laboriosam dolorum ipsa expedita eos explicabo non! Optio ab accusantium sunt, magni voluptate commodi ut aliquid maiores assumenda maxime possimus cupiditate blanditiis quo quam. Odio cum fugit facilis blanditiis adipisci cumque ex perferendis facere. Necessitatibus, facilis unde dolores iusto quaerat rem soluta repellendus fuga nobis voluptates vitae adipisci accusantium placeat officiis hic recusandae vero maxime sit, culpa ullam? Aliquid, necessitatibus tenetur ipsa suscipit repellat aperiam porro doloribus!</p>
+    </main>
+</body>
+</html>
